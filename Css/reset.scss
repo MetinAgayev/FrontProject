@@ -1,14 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 ul {
   list-style: none;
+  margin: 0;
 }
-
+P{
+  margin: 0;
+}
 input {
   border: none;
   outline: none;
@@ -18,4 +19,3 @@ a {
   text-decoration: none;
   color: #7e7e7e;
 }
-/*# sourceMappingURL=reset.css.map */
