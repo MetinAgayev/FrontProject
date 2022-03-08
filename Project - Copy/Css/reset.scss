@@ -6,8 +6,9 @@
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
-P{
+P {
   margin: 0;
 }
 input {
@@ -18,4 +19,8 @@ input {
 a {
   text-decoration: none;
   color: #7e7e7e;
+  cursor: pointer;
+}
+body {
+  font-family: "Lato", sans-serif;
 }
