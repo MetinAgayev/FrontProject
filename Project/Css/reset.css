@@ -28,5 +28,9 @@ a {
 
 body {
   font-family: "Lato", sans-serif;
+  -webkit-user-select: var(#3bb77e);
+     -moz-user-select: var(#3bb77e);
+      -ms-user-select: var(#3bb77e);
+          user-select: var(#3bb77e);
 }
 /*# sourceMappingURL=reset.css.map */

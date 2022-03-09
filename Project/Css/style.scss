@@ -1130,14 +1130,585 @@ footer {
   .main-left {
     width: 80%;
   }
-  .main-right {
+}
+.shop-banner {
+  margin-bottom: 15px;
+  position: relative;
+  background-size: cover;
+  padding: 84px 78px;
+  clear: both;
+  display: table;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 230px;
+  background: url(https://nest-nextjs.vercel.app/_next/static/media/banner-10.56479838083707e4ffd679cd027a528b.png);
+  h2 {
+    font-family: "Quicksand", sans-serif;
+    color: #253d4e;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 40px;
+  }
+  p {
+    font-weight: 400;
+    line-height: 24px;
+    color: #7e7e7e;
+    margin-bottom: 45px;
+    font-size: 18px;
+    .brand {
+      color: #3bb77e;
+    }
+  }
+  form {
+    display: flex;
+    background-color: #fff;
+    max-width: 450px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 4;
+    input {
+      border: 0;
+      border-radius: 50px 0 0 50px;
+      padding-left: 58px;
+      background: url(https://nest-nextjs.vercel.app/_next/static/media/icon-plane.9925108fd1428ef9984ec62466250612.png)
+        no-repeat 25px;
+      font-size: 16px;
+      width: 100%;
+      height: 64px;
+    }
+    button {
+      justify-content: end;
+      border: 0;
+      border-radius: 50px;
+      font-weight: 700;
+      padding: 15px 40px;
+      color: #fff;
+      background-color: #3bb77e;
+      font-size: 16px;
+      text-align: end;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    max-width: 40%;
+  }
+}
+.features {
+  padding: 25px 0 35px;
+  .box {
+    align-items: center;
+    position: relative;
+    background: #f4f6fa;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    .left {
+      transform: translateY(5px);
+      max-width: 60px;
+      margin-right: 20px;
+      transition: 0.4s;
+      img {
+        max-width: 100%;
+      }
+      &:hover {
+        transform: translateY(0px);
+      }
+    }
+    .right {
+      h3 {
+        color: #242424;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        line-height: 1.2;
+        font-family: "Quicksand", sans-serif;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        color: #7e7e7e;
+      }
+    }
+  }
+}
+.page-header {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+  font-family: "Quicksand", sans-serif;
+  .crumb {
+    display: inline-block;
+    padding: 0;
+    text-transform: capitalize;
+    color: #7e7e7e;
+    font-size: 14px;
+    font-weight: 600;
+    background: none;
+    margin: 0;
+    border-radius: 0;
+    a {
+      color: #3bb77e;
+      i {
+        margin-right: 5px;
+      }
+    }
+    .to1 {
+      font-size: 10px;
+      padding: 0 10px;
+    }
+    .to2 {
+      padding: 0 10px;
+      font-size: 10px;
+    }
+  }
+}
+.about-content {
+  margin-top: 30px;
+  text-align: center;
+  #content1 {
+    .img1 {
+      max-width: 90%;
+      border-radius: 15px;
+    }
+    h2 {
+      font-family: "Quicksand", sans-serif;
+      text-align: left;
+      color: #253d4e;
+      font-weight: 700;
+      line-height: 1.2;
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    .p1 {
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 24px;
+      color: #7e7e7e;
+      margin-bottom: 25px;
+    }
+    .p2 {
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 24px;
+      color: #7e7e7e;
+      margin-bottom: 50px;
+    }
+    .slider {
+      .image {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 240px;
+          height: 236px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .content2 {
+    margin-top: 30px;
+    h2 {
+      text-align: center;
+      background-image: url(https://wp.alithemes.com/html/nest/demo/assets/imgs/theme/wave.png);
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      padding-bottom: 25px;
+      margin-bottom: 40px;
+      font-size: 40px;
+    }
+    .box {
+      margin-bottom: 24px;
+      padding: 50px 30px;
+      border-radius: 15px;
+      border: 1px solid #ececec;
+      background: #fff;
+      img {
+        margin-bottom: 30px;
+        width: 100px;
+      }
+      h4 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        font-family: "Quicksand", sans-serif;
+        color: #253d4e;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+      p {
+        font-weight: 400;
+        line-height: 24px;
+        color: #7e7e7e;
+        font-size: 17px;
+        margin-bottom: 30px;
+      }
+      a {
+        color: #3bb77e;
+      }
+    }
+  }
+  .content3 {
+    margin-bottom: 50px;
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+    h4 {
+      text-align: left;
+      color: #b6b6b6;
+      color: #b6b6b6 !important;
+    }
+    h1 {
+      font-family: "Quicksand", sans-serif;
+      color: #253d4e;
+      font-weight: 700;
+      line-height: 1.2;
+      font-size: 48px;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    p {
+      font-family: "Quicksand", sans-serif;
+      color: #7e7e7e;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+    h3 {
+      font-family: "Quicksand", sans-serif;
+      color: #253d4e;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 30px;
+      font-size: 32px;
+      text-align: left;
+    }
+  }
+  .content4 {
+    .row {
+      z-index: 100;
+      position: relative;
+      color: #fff;
+      background: url(https://wp.alithemes.com/html/nest/demo/assets/imgs/page/about-9.png) no-repeat center center;
+      border-radius: 15px;
+      padding: 80px 0;
+      overflow: hidden;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: #4b675a;
+        z-index: 2;
+        opacity: 0.8;
+      }
+      .box {
+        width: 20%;
+        position: relative;
+        z-index: 3;
+        .heading-1 {
+          font-size: 72px;
+          color: #fff;
+          font-weight: 700;
+          line-height: 1.2;
+          font-family: "Quicksand", sans-serif;
+        }
+      }
+    }
+  }
+  .content5 {
+    margin-top: 30px;
+    h2 {
+      padding-bottom: 25px;
+      margin-bottom: 40px;
+      font-size: 40px;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    h6 {
+      color: #3bb77e !important;
+      margin-bottom: 5px !important;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.2;
+      font-family: "Quicksand", sans-serif;
+      text-align: left;
+    }
+    h1 {
+      font-size: 48px;
+      font-family: "Quicksand", sans-serif;
+      color: #253d4e;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 30px !important;
+      text-align: left;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 24px;
+      color: #7e7e7e;
+      margin-bottom: 30px !important;
+      text-align: left;
+    }
+    .btn {
+      display: flex;
+      justify-content: start;
+      text-align: left;
+      padding: 6px 0;
+      a {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 12px 30px;
+        border-radius: 4px;
+        color: #fff;
+        border: 1px solid transparent;
+        background-color: #3bb77e;
+        cursor: pointer;
+        transition: all 300ms linear 0s;
+        letter-spacing: 0.5px;
+        &:hover {
+          background-color: #fdc040;
+        }
+      }
+    }
+    .card {
+      border: none;
+      position: relative;
+      .card-content {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+        background: #fff;
+        padding: 30px;
+        max-width: 80%;
+        position: relative;
+        z-index: 2;
+        transform: translateY(-90px);
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.2s;
+        h4 {
+          font-size: 24px;
+          font-family: "Quicksand", sans-serif;
+          color: #253d4e;
+          font-weight: 700;
+          line-height: 1.2;
+          margin-bottom: 5px !important;
+        }
+        span {
+          font-size: 17px;
+        }
+        .social-network {
+          margin-top: 20px;
+          a {
+            display: inline-block;
+            padding: 0 5px;
+            img {
+              max-width: 30px;
+              min-width: 20px;
+              border-radius: 15px;
+              z-index: 1;
+            }
+          }
+        }
+      }
+      &:hover {
+        .card-content {
+          transform: translateY(-100px);
+        }
+      }
+    }
+  }
+}
+
+.product-main {
+  margin-top: 30px;
+  .info {
+    .first-span {
+      color: #f74b81;
+      background: #fde0e9;
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-family: "Quicksand", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .first-h2 {
+      font-family: "Quicksand", sans-serif;
+      color: #253d4e;
+      font-weight: 700;
+      line-height: 1.2;
+      font-size: 40px;
+    }
+    .product-rate {
+      padding: 15px 0;
+      i {
+        color: #f1c058;
+        font-size: 12px;
+      }
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      .span1 {
+        font-size: 58px;
+        text-decoration: none;
+        font-weight: 900;
+        color: #3bb77e;
+        font-family: "Quicksand", sans-serif;
+      }
+      .save-price {
+        font-size: 12px;
+        font-weight: 600;
+        display: block;
+        color: #fdc040;
+        margin-left: 15px;
+      }
+      .old-price {
+        font-size: 25px;
+        font-weight: 700;
+        display: block;
+        text-decoration: line-through;
+        color: #b6b6b6;
+        margin-left: 15px;
+      }
+    }
+    .about {
+      margin-bottom: 30px;
+      p {
+        font-weight: 400;
+        line-height: 24px;
+        color: #7e7e7e;
+        font-size: 17px;
+      }
+    }
+    .details {
+      display: flex;
+      align-items: center;
+      strong {
+        font-weight: 600;
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: "Quicksand", sans-serif;
+      }
+      .list-filter {
+        .active {
+          display: inline-block;
+          a {
+            color: #fff;
+            background-color: #3bb77e;
+            border-color: #3bb77e;
+            height: 32px;
+            line-height: 32px;
+            min-width: 40px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 0 9px;
+            background: #fff;
+          }
+        }
+        li {
+          display: inline-block;
+          a {
+            color: #7e7e7e;
+            height: 32px;
+            line-height: 32px;
+            min-width: 40px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .detail-extra {
+      display: flex;
+      .count {
+        position: relative;
+        margin: 0 6px 15px 0;
+        background: #fff;
+        border: 2px solid #3bb77e !important;
+        font-size: 16px;
+        font-weight: 700;
+        color: #3bb77e;
+        border-radius: 5px;
+        padding: 11px 60px 11px 30px;
+        max-width: 90px;
+        span {
+          margin-right: 7px;
+        }
+        .qty-down {
+          font-size: 16px;
+          position: absolute;
+          right: 8px;
+          color: #3bb77e;
+          bottom: -4px;
+        }
+        .qty-up {
+          font-size: 16px;
+          position: absolute;
+          right: 8px;
+          color: #3bb77e;
+          top: 0;
+        }
+      }
+      .add-cart {
+        button {
+          position: relative;
+          padding: 0px 20px;
+          border-radius: 5px;
+          border: 0;
+          height: 50px;
+          line-height: 50px;
+          font-weight: 700;
+          font-size: 16px;
+          font-family: "Quicksand", sans-serif;
+          background-color: #3bb77e;
+          color: #fff;
+        }
+        a {
+          background: #fff none repeat scroll 0 0;
+          border: 1px solid #f1f1f1;
+          color: #333;
+          border-radius: 5px;
+          display: inline-block;
+          height: 50px;
+          line-height: 55px;
+          position: relative;
+          text-align: center;
+          vertical-align: top;
+          width: 50px;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  .product-detail {
+    img {
+      width: 100%;
+      background-color: #fff;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      border: 1px solid #ececec;
+      overflow: hidden;
+    }
+  }
+  .product-right {
     .sticky-bar {
-      padding-top: 0px;
-      padding-bottom: 1px;
-      position: absolute;
-      transform: translateY(569.7px);
-      top: 0px;
-      width: 298px;
       .widget {
         position: relative;
         padding: 30px;
@@ -1278,8 +1849,8 @@ footer {
           }
           .custome-checkbox {
             input {
-              width: 1em;
-              height: 1em;
+              width: 0;
+              height: 0;
               margin-top: 0.25em;
               vertical-align: top;
               background-color: #fff;
@@ -1290,6 +1861,7 @@ footer {
               appearance: none;
               font-size: 16px;
               box-shadow: none;
+              opacity: 0;
             }
             label {
               position: relative;
@@ -1441,310 +2013,6 @@ footer {
     }
   }
 }
-.shop-banner {
-  margin-bottom: 15px;
-  position: relative;
-  background-size: cover;
-  padding: 84px 78px;
-  clear: both;
-  display: table;
-  width: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-  min-height: 230px;
-  background: url(https://nest-nextjs.vercel.app/_next/static/media/banner-10.56479838083707e4ffd679cd027a528b.png);
-  h2 {
-    font-family: "Quicksand", sans-serif;
-    color: #253d4e;
-    font-weight: 700;
-    line-height: 1.2;
-    font-size: 40px;
-  }
-  p {
-    font-weight: 400;
-    line-height: 24px;
-    color: #7e7e7e;
-    margin-bottom: 45px;
-    font-size: 18px;
-    .brand {
-      color: #3bb77e;
-    }
-  }
-  form {
-    display: flex;
-    background-color: #fff;
-    max-width: 450px;
-    border-radius: 50px;
-    position: relative;
-    z-index: 4;
-    input {
-      border: 0;
-      border-radius: 50px 0 0 50px;
-      padding-left: 58px;
-      background: url(https://nest-nextjs.vercel.app/_next/static/media/icon-plane.9925108fd1428ef9984ec62466250612.png)
-        no-repeat 25px;
-      font-size: 16px;
-      width: 100%;
-      height: 64px;
-    }
-    button {
-      justify-content: end;
-      border: 0;
-      border-radius: 50px;
-      font-weight: 700;
-      padding: 15px 40px;
-      color: #fff;
-      background-color: #3bb77e;
-      font-size: 16px;
-      text-align: end;
-    }
-  }
-
-  img {
-    position: absolute;
-    right: 50px;
-    bottom: 0;
-    max-width: 40%;
-  }
-}
-.features {
-  padding: 25px 0 35px;
-  .box {
-    align-items: center;
-    position: relative;
-    background: #f4f6fa;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    .left {
-      transform: translateY(5px);
-      max-width: 60px;
-      margin-right: 20px;
-      transition: 0.4s;
-      img {
-        max-width: 100%;
-      }
-      &:hover {
-        transform: translateY(0px);
-      }
-    }
-    .right {
-      h3 {
-        color: #242424;
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 5px;
-        line-height: 1.2;
-        font-family: "Quicksand", sans-serif;
-      }
-      p {
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 24px;
-        color: #7e7e7e;
-      }
-    }
-  }
-}
-.page-header {
-  padding: 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #ececec;
-  font-family: "Quicksand", sans-serif;
-  .crumb {
-    display: inline-block;
-    padding: 0;
-    text-transform: capitalize;
-    color: #7e7e7e;
-    font-size: 14px;
-    font-weight: 600;
-    background: none;
-    margin: 0;
-    border-radius: 0;
-    a {
-      color: #3bb77e;
-      i {
-        margin-right: 5px;
-      }
-    }
-    .to1 {
-      font-size: 10px;
-      padding: 0 10px;
-    }
-    .to2 {
-      padding: 0 10px;
-      font-size: 10px;
-    }
-  }
-}
-.about-content {
-  margin-top: 30px;
-  text-align: center;
-  #content1 {
-    .img1 {
-      max-width: 70%;
-      border-radius: 15px;
-      height: 90%;
-    }
-    h2 {
-      font-family: "Quicksand", sans-serif;
-      text-align: left;
-      color: #253d4e;
-      font-weight: 700;
-      line-height: 1.2;
-      font-size: 40px;
-      margin-bottom: 30px;
-    }
-    .p1 {
-      text-align: left;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 24px;
-      color: #7e7e7e;
-      margin-bottom: 25px;
-    }
-    .p2 {
-      text-align: left;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 24px;
-      color: #7e7e7e;
-      margin-bottom: 50px;
-    }
-    .slider {
-      .image {
-        display: flex;
-        justify-content: center;
-        img {
-          width: 240px;
-          height: 236px;
-          object-fit: cover;
-        }
-      }
-    }
-  }
-  .content2 {
-    h2 {
-      text-align: center;
-      background-image: url(https://wp.alithemes.com/html/nest/demo/assets/imgs/theme/wave.png);
-      background-position: center bottom;
-      background-repeat: no-repeat;
-      padding-bottom: 25px;
-      margin-bottom: 40px;
-      font-size: 40px;
-    }
-    .box {
-      margin-bottom: 24px;
-      padding: 50px 30px;
-      border-radius: 15px;
-      border: 1px solid #ececec;
-      background: #fff;
-      img {
-        margin-bottom: 30px;
-        width: 100px;
-      }
-      h4 {
-        font-size: 24px;
-        margin-bottom: 30px;
-        font-family: "Quicksand", sans-serif;
-        color: #253d4e;
-        font-weight: 700;
-        line-height: 1.2;
-      }
-      p {
-        font-weight: 400;
-        line-height: 24px;
-        color: #7e7e7e;
-        font-size: 17px;
-        margin-bottom: 30px;
-      }
-      a {
-        color: #3bb77e;
-      }
-    }
-  }
-  .content3 {
-    margin-bottom: 50px;
-    .image {
-      img {
-        width: 100%;
-      }
-    }
-    h4 {
-      text-align: left;
-      color: #b6b6b6;
-      color: #b6b6b6 !important;
-    }
-    h1 {
-      font-family: "Quicksand", sans-serif;
-      color: #253d4e;
-      font-weight: 700;
-      line-height: 1.2;
-      font-size: 48px;
-      margin-bottom: 40px;
-      text-align: left;
-    }
-    p {
-      font-family: "Quicksand", sans-serif;
-      color: #7e7e7e;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 30px;
-      text-align: left;
-    }
-    h3{
-      font-family: "Quicksand", sans-serif;
-      color: #253D4E;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 30px;
-      font-size: 32px;
-      text-align: left;
-    }
-  }
-  .content4 {
-    .row {
-      z-index: 100;
-      position: relative;
-      color: #fff;
-      background: url(https://wp.alithemes.com/html/nest/demo/assets/imgs/page/about-9.png) no-repeat center center;
-      border-radius: 15px;
-      padding: 80px 0;
-      overflow: hidden;
-      &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        background: #4b675a;
-        z-index: 2;
-        opacity: 0.8;
-      }
-      .box {
-        width: 20%;
-        position: relative;
-        z-index: 3;
-        .heading-1{
-          font-size: 72px;
-          color: #fff;
-          font-weight: 700;
-          line-height: 1.2;
-          font-family: "Quicksand", sans-serif;
-          
-        }
-      }
-    }
-  }
-  .content5{
-    img{
-      width: 100%;
-      border-radius: 10px;
-    }
-  }
-}
-
 .slick-prev:before,
 .slick-next:before {
   color: green;

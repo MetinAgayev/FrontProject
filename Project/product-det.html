@@ -1,12 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="header-info-left">
+                            <ul class="d-flex ">
+                                <li>
+                                    <a href="">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="">My Account</a>
+                                </li>
+                                <li>
+                                    <a href="">Wishlist</a>
+                                </li>
+                                <li>
+                                    <a href="">Order Tracking</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="header-middle text-center">
+                            <marquee behavior="" direction="up" scrolldelay="400" class="text-center">100% secure
+                                delivery without
+                                contacting the courier</marquee>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="header-info-right">
+                            <ul class="d-flex justify-content-end">
+                                <li>Need help? Call Us:
+                                    <strong>+1600 900</strong>
+                                </li>
+                                <li><a href="">English</a></li>
+                                <li>USD</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="bottom">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="header-left">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/logo.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-flex align-items-center justify-content-between">
+                        <div class="header-middle">
+                            <form action="#">
+                                <div>
+                                    <span>All Categories</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <span class="line"></span>
+                                </div>
+                                <div class="input-div">
+                                    <input type="text" placeholder="Search for items">
+                                </div>
+                                <div class="search-icon">
+                                    <i class="fa-solid fa-magnifying-glass search"></i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="header-right d-flex align-items-center justify-content-between">
+                            <div class="header-location d-flex align-items-center ">
+
+                                <i class="fa-solid fa-location-dot "></i>
+                                <span>Your Location</span>
+                                <i class="fa-solid fa-angle-down downs"></i>
+
+                            </div>
+
+                            <div class="header-action">
+                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-compare.svg"
+                                    alt=""><a href="">Compare</a>
+                                <span>3</span>
+                            </div>
+                            <div class="header-action"><img
+                                    src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-heart.svg"
+                                    alt="">
+                                <a href="">Wishlist</a> <span>6</span>
+                            </div>
+                            <div class="header-action">
+                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-cart.svg"
+                                    alt="">
+                                <a href="">Cart</a>
+                                <span>2</span>
+                            </div>
+                            <div class="header-action">
+                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-user.svg"
+                                    alt="">
+                                <a href="">Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="navbar">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-9">
+                    <div class="nav-left d-flex justify-content-between align-items-center">
+                        <div class="categories d-flex align-items-center">
+                            <a href=""><i class="fa-solid fa-table-cells-large"></i></a><span>Trending Categories</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="nav-menu d-flex">
+                            <ul class="d-flex justify-content-around">
+                                <li><a href=""><span>Hot Deals</span><i class="fa-solid fa-fire"
+                                            style="font-size:18px;"></i></a>
+                                </li>
+                                <li><a href=""><span>Home</span><i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Home 1</a></li>
+                                        <li><a href="">Home 2</a></li>
+                                        <li><a href="">Home 3</a></li>
+                                        <li><a href="">Home 4</a></li>
+                                        <li><a href="">Home 5</a></li>
+                                        <li><a href="">Home 6</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href=""><span>About</span></a></li>
+                                <li><a href=""><span>Shop</span><i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Shop Grid – Left Sidebar</a></li>
+                                        <li><a href="">Shop List – Right Sidebar</a></li>
+                                        <li><a href="">Shop Grid – Left Sidebar</a></li>
+                                        <li><a href="">Shop List – Right Sidebar</a></li>
+                                        <li><a href="">Shop White</a></li>
+                                        <li><a href="">Single Product</a><i class="fa-solid fa-angle-right"></i>
+                                            <ul class="sub-menu-2">
+                                                <li><a href="">Product-Right SideBar</a></li>
+                                                <li><a href="">Product-Left SideBar</a></li>
+                                                <li><a href="">Product-No SideBar</a></li>
+                                                <li><a href="">Vendor info</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Shop Filter</a></li>
+                                        <li><a href="">Shop Wishlist</a></li>
+                                        <li><a href="">Shop Card</a></li>
+                                        <li><a href="">Shop Checkout</a></li>
+                                        <li><a href="">Shop Compare</a></li>
+                                        <li><a href="">Shop Invoice </a><i class="fa-solid fa-angle-right"></i>
+                                            <ul class="sub-menu-2">
+                                                <li><a href="">Shop Invoice 1</a></li>
+                                                <li><a href="">Shop Invoice 2</a></li>
+                                                <li><a href="">Shop Invoice 3</a></li>
+                                                <li><a href="">Shop Invoice 4</a></li>
+                                                <li><a href="">Shop Invoice 5</a></li>
+                                                <li><a href="">Shop Invoice 6</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href=""><span>Vendors</span><i class="fa-solid fa-angle-down"></i></a></li>
+                                <li class="Mega"><a href=""><span>Mega Menu</span><i
+                                            class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="mega-menu d-flex">
+                                        <li class="mega-sub-menu "><a href="">Trending</a>
+                                            <a href="#">Fruit & Vegetables</a>
+                                            <ul>
+                                                <li><a href="#">Meat & Poultry</a></li>
+                                                <li><a href="#">Fresh Vegetables</a></li>
+                                                <li><a href="#">Herbs & Seasonings</a></li>
+                                                <li><a href="#">Cuts & Sprouts</a></li>
+                                                <li><a href="#">Exotic Fruits & Veggies</a></li>
+                                                <li><a href="#">Packaged Produce</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-sub-menu "><a href="">Trending</a>
+                                            <a href="#">Breakfast & Dairy</a>
+                                            <ul>
+                                                <li><a href="#">Milk & Flavoured Milk</a></li>
+                                                <li><a href="#">Butter and Margarine</a></li>
+                                                <li><a href="#">Eggs Substitutes</a></li>
+                                                <li><a href="#">Marmalades</a></li>
+                                                <li><a href="#">Sour Cream</a></li>
+                                                <li><a href="#">Cheese</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-sub-menu "><a href="">Shop Invoice 3</a>
+                                            <a href="#">Meat & Seafood</a>
+                                            <ul>
+                                                <li><a href="#">Breakfast Sausage</a></li>
+                                                <li><a href="#">Dinner Sausage</a></li>
+                                                <li><a href="#">Chicken</a></li>
+                                                <li><a href="#">Sliced Deli Meat</a></li>
+                                                <li><a href="#">Wild Caught Fillets</a></li>
+                                                <li><a href="#">Crab and Shellfish</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-sub-menu"><a href="">Shop Invoice 4</a>
+                                            <a href="#">
+                                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-menu.png"
+                                                    alt="">
+                                            </a>
+                                            <div class="content">
+                                                <h4 style="font-size: 12px;">Hot Deals</h4>
+                                                <h3>Don't miss <br> Trending</h3>
+                                                <p>Save to 50%</p>
+                                                <button>Shop now</button>
+                                            </div>
+                                            <div class="discount">
+                                                <h3>
+                                                    <span>25%</span>
+                                                    off
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href=""><span>Blog</span><i class="fa-solid fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Blog Category Grid</a></li>
+                                        <li><a href="">Blog Category List</a></li>
+                                        <li><a href="">Blog Category Big</a></li>
+                                        <li><a href="">Blog Category Wide</a></li>
+                                        <li><a href="">Single Post</a> <i class="fa-solid fa-angle-right"></i>
+                                            <ul class="sub-menu-2">
+                                                <li><a href="">Product-Right SideBar</a></li>
+                                                <li><a href="">Product-Left SideBar</a></li>
+                                                <li><a href="">Product-No SideBar</a></li>
+                                                <li><a href="">Vendor info</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href=""><span>Pages</span><i class="fa-solid fa-angle-down"></i></a></li>
+                            </ul>
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="nav-right d-flex justify-content-end">
+                        <div class="image">
+                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-headphone-white.svg"
+                                alt="">
+                        </div>
+                        <div class="text d-flex justify-content-end ">
+                            <p>
+                                1900-800
+                            </p>
+                            <span>
+                                24/7 Support Center
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <div class="page-header">
+        <div class="container-fluid">
+            <div class="crumb">
+                <a href=""><i class="fa-solid fa-house"></i>Home</a>
+                <i class="fa-solid fa-angle-right to1"></i>
+                <span> Vegetables & Tubers </span>
+                <i class="fa-solid fa-angle-right to2"></i>
+                Seeds Of Change Organic
+            </div>
+        </div>
+    </div>
+    <div class="product-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="product-detail">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="image">
+                                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-16-7.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="info">
+                                    <span class="first-span">Sale Off</span>
+                                    <h2 class="first-h2">Seeds of Change Organic Quinoa, Brown</h2>
+                                    <div class="product-rate">
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star-half star"></i>
+                                        <span>(32 Rewiews)</span>
+                                    </div>
+                                    <div class="price">
+                                        <span class="span1">$38</span>
+                                        <span>
+                                            <span class="save-price">26% Off</span>
+                                            <span class="old-price">$52</span>
+                                        </span>
+                                    </div>
+                                    <div class="about">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem
+                                            officia, corrupti reiciendis minima nisi modi, quasi, odio minus dolore
+                                            impedit fuga eum eligendi.</p>
+                                    </div>
+                                    <div class="details">
+                                        <strong>Size / Weight: </strong>
+                                        <ul class="list-filter d-flex">
+                                            <li class="active"><a href="">50g</a></li>
+                                            <li><a href="">60g</a></li>
+                                            <li><a href="">80g</a></li>
+                                            <li><a href="">100g</a></li>
+                                            <li><a href="">150g</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="detail-extra">
+                                        <div class="count">
+                                            <a href="" class="qty-down"><i class="fa-solid fa-angle-down"></i></a>
+                                            <span class="qty-val">1</span>
+                                            <a href="" class="qty-up"><i class="fa-solid fa-angle-up"></i></a>
+                                        </div>
+                                        <div class="add-cart">
+                                            <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                                            <a href=""><i class="fa-solid fa-heart"></i></a>
+                                            <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="detail-bottom d-flex">
+                                        <ul>
+                                            <li>Type: <span class="text-brand">Organic</span></li>
+                                            <li >MFG:<span class="text-brand"> Jun 4.2021</span></li>
+                                            <li>LIFE: <span class="text-brand">70 days</span></li>
+                                        </ul>
+                                        <ul">
+                                            <li>SKU: <a href="#">FWM15VKT</a></li>
+                                            <li>Tags: <a href="#" rel="tag">Snack</a>, <a href="#" rel="tag">Organic</a>, <a href="#" rel="tag">Brown</a></li>
+                                            <li>Stock:<span class="in-stock text-brand ml-5">8 Items In Stock</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-right">
+                        <div class="sticky-bar">
+                            <div class="widget">
+                                <h5>Category</h5>
+                                <ul>
+                                    <li>
+                                        <a href=""><img
+                                                src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/category-1.svg"
+                                                alt="">Milk Daires</a><span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href=""><img
+                                                src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/category-2.svg"
+                                                alt="">Clothing</a><span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href=""><img
+                                                src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/category-3.svg"
+                                                alt="">Pet Foods</a><span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href=""><img
+                                                src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/category-3.svg"
+                                                alt="">Baking material</a><span>0</span>
+                                    </li>
+                                    <li>
+                                        <a href=""><img
+                                                src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/category-5.svg"
+                                                alt="">Fresh Fruit</a><span>0</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="price-range">
+                                <h5>Fill By Price</h5>
+                                <div class="price-filter">
+                                    <div class="top">
+                                        <div class="range1">
+                                            <div class="range1-ball">
+
+                                            </div>
+                                        </div>
+                                        <div class="range2">
+                                            <div class="range2-ball">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom d-flex justify-content-between">
+                                        <div class="caption">From: <strong id="slider-range-value1"
+                                                class="text-brand">$500</strong>
+                                        </div>
+                                        <div class="caption">To: <strong id="slider-range-value2"
+                                                class="text-brand">$966</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <label for="">Color</label>
+                                    <div class="custome-checkbox">
+                                        <input class="form-check-input" type="checkbox" name="checkbox"
+                                            id="exampleCheckbox1" value="">
+                                        <label class="form-check-label" for="exampleCheckbox1"><span>Red
+                                                (56)</span></label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" name="checkbox"
+                                            id="exampleCheckbox2" value="">
+                                        <label class="form-check-label" for="exampleCheckbox2"><span>Green
+                                                (78)</span></label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" name="checkbox"
+                                            id="exampleCheckbox3" value="">
+                                        <label class="form-check-label" for="exampleCheckbox3"><span>Blue
+                                                (54)</span></label>
+                                    </div>
+                                    <label for="">İtem Condition</label>
+                                    <div class="custome-checkbox">
+                                        <input class="form-check-input" type="checkbox" name="checkbox"
+                                            id="exampleCheckbox11" value="">
+                                        <label class="form-check-label" for="exampleCheckbox11"><span>New
+                                                (1506)</span></label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" name="checkbox"
+                                            id="exampleCheckbox21" value="">
+                                        <label class="form-check-label" for="exampleCheckbox21"><span>Refurbished
+                                                (27)</span></label>
+                                        <br>
+                                        <input class="form-check-input" type="checkbox" name="checkbox"
+                                            id="exampleCheckbox31" value="">
+                                        <label class="form-check-label" for="exampleCheckbox31"><span>Used
+                                                (45)</span></label>
+                                    </div>
+                                </div>
+                                <a href=""><i class="fa-solid fa-filter"></i> Filter</a>
+                            </div>
+                            <div class="new-products">
+                                <h5>New Prodcuts</h5>
+                                <div class="section">
+                                    <div class="left"><img
+                                            src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-3.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="right">
+                                        <h4>Chen Cardigan</h4>
+                                        <div class="price">99.8</div>
+                                        <div class="product-rate"><i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star-half star"></i>
+                                            <span>(4.0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="left"><img
+                                            src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-3.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="right">
+                                        <h4>Chen Cardigan</h4>
+                                        <div class="price">99.8</div>
+                                        <div class="product-rate"><i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star-half star"></i>
+                                            <span>(4.0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="left"><img
+                                            src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/thumbnail-3.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="right">
+                                        <h4>Chen Cardigan</h4>
+                                        <div class="price">99.8</div>
+                                        <div class="product-rate"><i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star star"></i>
+                                            <i class="fa-solid fa-star-half star"></i>
+                                            <span>(4.0)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="banner">
+                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-11.png"
+                                    alt="">
+                                <div class="text">
+                                    <span>Oganic</span>
+                                    <h4>
+                                        Save 17% <br>
+                                        on <span class="brand">Oganic</span><br>
+                                        Juice
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/main.js"></script>
+
 </html>
