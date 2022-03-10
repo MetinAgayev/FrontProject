@@ -1880,6 +1880,18 @@ footer .container-fluid .info .p2 {
   font-family: "Quicksand", sans-serif;
 }
 
+.product-main .info .details .list-filter li {
+  display: inline-block;
+}
+
+.product-main .info .details .list-filter li a {
+  color: #7e7e7e;
+  height: 32px;
+  line-height: 32px;
+  min-width: 40px;
+  text-align: center;
+}
+
 .product-main .info .details .list-filter .active {
   display: inline-block;
 }
@@ -1894,22 +1906,10 @@ footer .container-fluid .info .p2 {
   text-align: center;
   border-radius: 5px;
   padding: 0 9px;
-  background: #fff;
-}
-
-.product-main .info .details .list-filter li {
-  display: inline-block;
-}
-
-.product-main .info .details .list-filter li a {
-  color: #7e7e7e;
-  height: 32px;
-  line-height: 32px;
-  min-width: 40px;
-  text-align: center;
 }
 
 .product-main .info .detail-extra {
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1975,6 +1975,55 @@ footer .container-fluid .info .p2 {
   vertical-align: top;
   width: 50px;
   margin: 0 5px;
+}
+
+.product-main .info .detail-bottom ul {
+  margin-right: 50px;
+}
+
+.product-main .info .detail-bottom ul li {
+  margin-bottom: 5px;
+}
+
+.product-main .info .detail-bottom ul li span {
+  color: #3bb77e;
+}
+
+.product-main .info .detail-bottom ul li a {
+  color: #3bb77e;
+}
+
+.product-main .product-info {
+  border: 1px solid #ececec;
+  border-radius: 15px;
+  padding: 40px 50px;
+}
+
+.product-main .product-info .tab .nav-items .nav-item a {
+  display: block;
+  padding: 13px 24px !important;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  text-transform: none;
+  font-size: 17px;
+  border-radius: 30px;
+  border: 1px solid #ececec;
+  background: #fff;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin: 0 10px 0 0;
+  padding: 13px 24px;
+}
+
+.product-main .product-info .tab .nav-items .nav-item a:hover {
+  color: #3bb77e;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .product-main .product-detail img {
