@@ -21,289 +21,562 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
+
+    <div class="sidebar">
+        <div class="sidebar-inner">
+            <div class="top">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <div class="close" id="btn-close-navbar">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="search">
+                    <input type="text" placeholder="Search for items...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="sidebar-menu">
+                    <nav>
+                        <ul class="navigation">
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Home</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Home 1</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 3</a></li>
+                                    <li><a href="#">Home 4</a></li>
+                                    <li><a href="#">Home 5</a></li>
+                                    <li><a href="#">Home 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Shop</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Shop Grid - Right Sidebar</a></li>
+                                    <li><a href="#">Shop Grid - Left Sidebar</a></li>
+                                    <li><a href="#">Shop List - Right Sidebar</a></li>
+                                    <li><a href="#">Shop List - Left Sidebar</a></li>
+                                    <li><a href="#">Shop - Wide</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Single Product</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Product – Right Sidebar</a></li>
+                                            <li><a href="#">Product – Left Sidebar</a></li>
+                                            <li><a href="#">Product – No Sidebar</a></li>
+                                            <li><a href="#">Product – Vendor Info</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Shop - Filter</a></li>
+                                    <li><a href="#">Shop - Wishlist</a></li>
+                                    <li><a href="#">Shop - Cart</a></li>
+                                    <li><a href="#">Shop - Checkout</a></li>
+                                    <li><a href="#">Shop - Compare</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Shop Invoice</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Shop Invoice 1</a></li>
+                                            <li><a href="#">Shop Invoice 2</a></li>
+                                            <li><a href="#">Shop Invoice 3</a></li>
+                                            <li><a href="#">Shop Invoice 4</a></li>
+                                            <li><a href="#">Shop Invoice 5</a></li>
+                                            <li><a href="#">Shop Invoice 6</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Vendors</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Vendors Grid</a></li>
+                                    <li><a href="#">Vendors List</a></li>
+                                    <li><a href="#">Vendor Details 01</a></li>
+                                    <li><a href="#">Vendor Details 02</a></li>
+                                    <li><a href="#">Vendor Dashboard</a></li>
+                                    <li><a href="#">Vendor Guide</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Mega Menu</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Women's Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Blouses & Shirts</a></li>
+                                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="#">Women's Sets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Men's Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Casual Faux Leather</a></li>
+                                            <li><a href="#">Genuine Leather</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Technology</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Gaming Laptops</a></li>
+                                            <li><a href="#">Ultraslim Laptops</a></li>
+                                            <li><a href="#">Tablets</a></li>
+                                            <li><a href="#">Laptop Accessories</a></li>
+                                            <li><a href="#">Tablet Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Blog</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Blog Category Grid</a></li>
+                                    <li><a href="#">Blog Category List</a></li>
+                                    <li><a href="#">Blog Category Big</a></li>
+                                    <li><a href="#">Blog Category Wide</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Single Product Layout</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Left Sidebar</a></li>
+                                            <li><a href="#">Right Sidebar</a></li>
+                                            <li><a href="#">No Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Purchase Guide</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Language</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">French</a></li>
+                                    <li><a href="#">German</a></li>
+                                    <li><a href="#">Spanish</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="info">
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Our location
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        Log In / Sign Up
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-headphones"></i>
+                        (+01) - 2345 - 6789 
+                    </a>
+                </div>
+                <div class="socials">
+                    <h6>Follow Us</h6>
+                    <a href="#">
+                        <img src="img/icon-facebook-white.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-twitter-white.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-instagram-white.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-pinterest-white.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-youtube-white.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
     <header>
-        <div class="top">
+        <section id="top">
             <div class="container-fluid">
-                <div class="row align-items-center">
+                <div class="row">
                     <div class="col-lg-4">
-                        <div class="header-info-left">
-                            <ul class="d-flex ">
-                                <li>
-                                    <a href="">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="">My Account</a>
-                                </li>
-                                <li>
-                                    <a href="">Wishlist</a>
-                                </li>
-                                <li>
-                                    <a href="">Order Tracking</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                        </ul>
                     </div>
-
                     <div class="col-lg-4">
-                        <div class="header-middle text-center">
-                            <marquee behavior="" direction="up" scrolldelay="400" class="text-center">100% secure
-                                delivery without
-                                contacting the courier</marquee>
+                        <div class="news">
+                            <div class="slick-text">100% Secure delivery without contacting the courier</div>
+                            <div class="slick-text">Super Value Deals - Save more with coupons</div>
+                            <div class="slick-text">Trendy 25silver jewelry, save up 35% off today</div>
                         </div>
                     </div>
-
                     <div class="col-lg-4">
-                        <div class="header-info-right">
-                            <ul class="d-flex justify-content-end">
-                                <li>Need help? Call Us:
-                                    <strong>+1600 900</strong>
-                                </li>
-                                <li><a href="">English</a></li>
-                                <li>USD</li>
-
-                            </ul>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-
-        <div class="bottom">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-2">
-                        <div class="header-left">
-                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/logo.svg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 d-flex align-items-center justify-content-between">
-                        <div class="header-middle">
-                            <form action="#">
-                                <div>
-                                    <span>All Categories</span>
+                        <div class="help">
+                            <ul class="help-menu">
+                                <li class="help-menu-item">Need help? Call Us: <span class="highlight"> + 1800
+                                        900</span></li>
+                                <li class="help-menu-item lang">
+                                    English
                                     <i class="fa-solid fa-angle-down"></i>
-                                    <span class="line"></span>
-                                </div>
-                                <div class="input-div">
-                                    <input type="text" placeholder="Search for items">
-                                </div>
-                                <div class="search-icon">
-                                    <i class="fa-solid fa-magnifying-glass search"></i>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="header-right d-flex align-items-center justify-content-between">
-                            <div class="header-location d-flex align-items-center ">
-
-                                <i class="fa-solid fa-location-dot "></i>
-                                <span>Your Location</span>
-                                <i class="fa-solid fa-angle-down downs"></i>
-
-                            </div>
-
-                            <div class="header-action">
-                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-compare.svg"
-                                    alt=""><a href="">Compare</a>
-                                <span>3</span>
-                            </div>
-                            <div class="header-action"><img
-                                    src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-heart.svg"
-                                    alt="">
-                                <a href="">Wishlist</a> <span>6</span>
-                            </div>
-                            <div class="header-action">
-                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-cart.svg"
-                                    alt="">
-                                <a href="">Cart</a>
-                                <span>2</span>
-                            </div>
-                            <div class="header-action">
-                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-user.svg"
-                                    alt="">
-                                <a href="">Account</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </header>
-
-
-    <section id="navbar">
-        <div class="container-fluid">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-9">
-                    <div class="nav-left d-flex justify-content-between align-items-center">
-                        <div class="categories d-flex align-items-center">
-                            <a href=""><i class="fa-solid fa-table-cells-large"></i></a><span>Trending Categories</span>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                        <div class="nav-menu d-flex">
-                            <ul class="d-flex justify-content-around">
-                                <li><a href=""><span>Hot Deals</span><i class="fa-solid fa-fire"
-                                            style="font-size:18px;"></i></a>
-                                </li>
-                                <li><a href=""><span>Home</span><i class="fa-solid fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="">Home 1</a></li>
-                                        <li><a href="">Home 2</a></li>
-                                        <li><a href="">Home 3</a></li>
-                                        <li><a href="">Home 4</a></li>
-                                        <li><a href="">Home 5</a></li>
-                                        <li><a href="">Home 6</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href=""><span>About</span></a></li>
-                                <li><a href=""><span>Shop</span><i class="fa-solid fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="">Shop Grid – Left Sidebar</a></li>
-                                        <li><a href="">Shop List – Right Sidebar</a></li>
-                                        <li><a href="">Shop Grid – Left Sidebar</a></li>
-                                        <li><a href="">Shop List – Right Sidebar</a></li>
-                                        <li><a href="">Shop White</a></li>
-                                        <li><a href="">Single Product</a><i class="fa-solid fa-angle-right"></i>
-                                            <ul class="sub-menu-2">
-                                                <li><a href="">Product-Right SideBar</a></li>
-                                                <li><a href="">Product-Left SideBar</a></li>
-                                                <li><a href="">Product-No SideBar</a></li>
-                                                <li><a href="">Vendor info</a></li>
-                                            </ul>
+                                    <ul class="flag-dropdown">
+                                        <li>
+                                            <img src="img/flag-fr.png" alt=""> France
                                         </li>
-                                        <li><a href="">Shop Filter</a></li>
-                                        <li><a href="">Shop Wishlist</a></li>
-                                        <li><a href="">Shop Card</a></li>
-                                        <li><a href="">Shop Checkout</a></li>
-                                        <li><a href="">Shop Compare</a></li>
-                                        <li><a href="">Shop Invoice </a><i class="fa-solid fa-angle-right"></i>
-                                            <ul class="sub-menu-2">
-                                                <li><a href="">Shop Invoice 1</a></li>
-                                                <li><a href="">Shop Invoice 2</a></li>
-                                                <li><a href="">Shop Invoice 3</a></li>
-                                                <li><a href="">Shop Invoice 4</a></li>
-                                                <li><a href="">Shop Invoice 5</a></li>
-                                                <li><a href="">Shop Invoice 6</a></li>
-                                            </ul>
+                                        <li>
+                                            <img src="img/flag-dt.png" alt=""> German
+                                        </li>
+                                        <li>
+                                            <img src="img/flag-fr.png" alt=""> France
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href=""><span>Vendors</span><i class="fa-solid fa-angle-down"></i></a></li>
-                                <li class="Mega"><a href=""><span>Mega Menu</span><i
-                                            class="fa-solid fa-angle-down"></i></a>
-                                    <ul class="mega-menu d-flex">
-                                        <li class="mega-sub-menu "><a href="">Trending</a>
-                                            <a href="#">Fruit & Vegetables</a>
-                                            <ul>
-                                                <li><a href="#">Meat & Poultry</a></li>
-                                                <li><a href="#">Fresh Vegetables</a></li>
-                                                <li><a href="#">Herbs & Seasonings</a></li>
-                                                <li><a href="#">Cuts & Sprouts</a></li>
-                                                <li><a href="#">Exotic Fruits & Veggies</a></li>
-                                                <li><a href="#">Packaged Produce</a></li>
-                                            </ul>
+                                <li class="help-menu-item lang">
+                                    USD
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <ul class="flag-dropdown currency-dropdown">
+                                        <li>
+                                            <img src="img/flag-fr.png" alt=""> INR
                                         </li>
-                                        <li class="mega-sub-menu "><a href="">Trending</a>
-                                            <a href="#">Breakfast & Dairy</a>
-                                            <ul>
-                                                <li><a href="#">Milk & Flavoured Milk</a></li>
-                                                <li><a href="#">Butter and Margarine</a></li>
-                                                <li><a href="#">Eggs Substitutes</a></li>
-                                                <li><a href="#">Marmalades</a></li>
-                                                <li><a href="#">Sour Cream</a></li>
-                                                <li><a href="#">Cheese</a></li>
-                                            </ul>
+                                        <li>
+                                            <img src="img/flag-dt.png" alt=""> MBP
                                         </li>
-                                        <li class="mega-sub-menu "><a href="">Shop Invoice 3</a>
-                                            <a href="#">Meat & Seafood</a>
-                                            <ul>
-                                                <li><a href="#">Breakfast Sausage</a></li>
-                                                <li><a href="#">Dinner Sausage</a></li>
-                                                <li><a href="#">Chicken</a></li>
-                                                <li><a href="#">Sliced Deli Meat</a></li>
-                                                <li><a href="#">Wild Caught Fillets</a></li>
-                                                <li><a href="#">Crab and Shellfish</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-sub-menu"><a href="">Shop Invoice 4</a>
-                                            <a href="#">
-                                                <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-menu.png"
-                                                    alt="">
-                                            </a>
-                                            <div class="content">
-                                                <h4 style="font-size: 12px;">Hot Deals</h4>
-                                                <h3>Don't miss <br> Trending</h3>
-                                                <p>Save to 50%</p>
-                                                <button>Shop now</button>
-                                            </div>
-                                            <div class="discount">
-                                                <h3>
-                                                    <span>25%</span>
-                                                    off
-                                                </h3>
-                                            </div>
+                                        <li>
+                                            <img src="img/flag-fr.png" alt=""> EU
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href=""><span>Blog</span><i class="fa-solid fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="">Blog Category Grid</a></li>
-                                        <li><a href="">Blog Category List</a></li>
-                                        <li><a href="">Blog Category Big</a></li>
-                                        <li><a href="">Blog Category Wide</a></li>
-                                        <li><a href="">Single Post</a> <i class="fa-solid fa-angle-right"></i>
-                                            <ul class="sub-menu-2">
-                                                <li><a href="">Product-Right SideBar</a></li>
-                                                <li><a href="">Product-Left SideBar</a></li>
-                                                <li><a href="">Product-No SideBar</a></li>
-                                                <li><a href="">Vendor info</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href=""><span>Pages</span><i class="fa-solid fa-angle-down"></i></a></li>
                             </ul>
-
-
-
-
-
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="col-lg-2">
-                    <div class="nav-right d-flex justify-content-end">
-                        <div class="image">
-                            <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-headphone-white.svg"
-                                alt="">
-                        </div>
-                        <div class="text d-flex justify-content-end ">
-                            <p>
-                                1900-800
-                            </p>
-                            <span>
-                                24/7 Support Center
-                            </span>
-
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-1 d-xl-none">
+                        <div class="navbar-collapse-button" id="btn-open-navbar">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-5 col-md-6 col-sm-6 col-8">
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 d-none d-xl-block">
+                        <div class="search-box">
+                            <input type="text" placeholder="Search for items...">
+                            <img src="img/search.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-5 col-sm-5 col-3">
+                        <div class="actions">
+                            <div class="action hide-action">
+                                <div class="icon">
+                                    <img src="img/icon-compare.svg" alt="">
+                                    <span>6</span>
+                                </div>
+                                <div class="text">
+                                    <p>Compare</p>
+                                </div>
+                            </div>
+                            <div class="action">
+                                <div class="icon">
+                                    <img src="img/icon-heart.svg" alt="">
+                                    <span>6</span>
+                                </div>
+                                <div class="text">
+                                    <p>Wishlist</p>
+                                </div>
+                            </div>
+                            <div class="action cart-action">
+                                <div class="icon">
+                                    <img src="img/icon-cart.svg" alt="">
+                                    <span>6</span>
+                                </div>
+                                <div class="text">
+                                    <p>Cart</p>
+                                </div>
+                                <div class="cart">
+                                    <ul>
+                                        <li>
+                                            <img src="img/thumbnail-2.jpg" alt="">
+                                            <div class="description">
+                                                <div class="name">Daisy Casual Bag</div>
+                                                <div class="price">
+                                                    <span class="quantity">1</span> × <span
+                                                        class="amount">$3200.00</span>
+                                                </div>
+                                            </div>
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </li>
+                                        <li>
+                                            <img src="img/thumbnail-2.jpg" alt="">
+                                            <div class="description">
+                                                <div class="name">Daisy Casual Bag</div>
+                                                <div class="price">
+                                                    <span class="quantity">1</span> × <span
+                                                        class="amount">$3200.00</span>
+                                                </div>
+                                            </div>
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="cart-footer">
+                                        <div class="total">
+                                            <p class="text">Total</p>
+                                            <p class="price">$4000.00</p>
+                                        </div>
+                                        <div class="buttons">
+                                            <button class="btn-cart" type="button">View cart</button>
+                                            <button class="btn-checkout" type="button">Checkout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action acc-action hide-action">
+                                <div class="icon">
+                                    <img src="img/icon-user.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Account</p>
+                                </div>
+                                <div class="account-dropdown">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-regular fa-user"></i> My Account
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-location-dot"></i> Order Tracking
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-tag"></i> My Voucher
+                                        </li>
+                                        <li>
+                                            <i class="fa-regular fa-heart"></i> My Wishlist
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-sliders"></i> Settings
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign out
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10">
+                        <div class="content-wrapper">
+                            <div class="categories hide-categories">
+                                <button type="button">
+                                    <i class="fa-solid fa-table-cells-large"></i>
+                                    Trending Categories
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                            </div>
+                            <div class="deals hide-deals">
+                                <img src="img/icon-hot-white.svg" alt=""> Hot Deals
+                            </div>
+                            <nav>
+                                <ul class="navigation">
+                                    <li class="nav-item"><a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Home 1</a></li>
+                                            <li><a href="#">Home 2</a></li>
+                                            <li><a href="#">Home 3</a></li>
+                                            <li><a href="#">Home 4</a></li>
+                                            <li><a href="#">Home 5</a></li>
+                                            <li><a href="#">Home 6</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="#">About</a></li>
+                                    <li class="nav-item"><a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Shop Grid - Right Sidebar</a></li>
+                                            <li><a href="#">Shop Grid - Left Sidebar</a></li>
+                                            <li><a href="#">Shop List - Right Sidebar</a></li>
+                                            <li><a href="#">Shop List - Left Sidebar</a></li>
+                                            <li><a href="#">Shop - Wide</a></li>
+                                            <li><a href="#">Single Product <i class="fa-solid fa-angle-right"></i></a>
+                                                <ul class="level-menu">
+                                                    <li><a href="#">Product – Right Sidebar</a></li>
+                                                    <li><a href="#">Product – Left Sidebar</a></li>
+                                                    <li><a href="#">Product – No Sidebar</a></li>
+                                                    <li><a href="#">Product – Vendor Info</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Shop - Filter</a></li>
+                                            <li><a href="#">Shop - Wishlist</a></li>
+                                            <li><a href="#">Shop - Cart</a></li>
+                                            <li><a href="#">Shop - Checkout</a></li>
+                                            <li><a href="#">Shop - Compare</a></li>
+                                            <li><a href="#">Shop Invoice <i class="fa-solid fa-angle-right"></i></a>
+                                                <ul class="level-menu">
+                                                    <li><a href="#">Shop Invoice 1</a></li>
+                                                    <li><a href="#">Shop Invoice 2</a></li>
+                                                    <li><a href="#">Shop Invoice 3</a></li>
+                                                    <li><a href="#">Shop Invoice 4</a></li>
+                                                    <li><a href="#">Shop Invoice 5</a></li>
+                                                    <li><a href="#">Shop Invoice 6</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="#">Vendors <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Vendors Grid</a></li>
+                                            <li><a href="#">Vendors List</a></li>
+                                            <li><a href="#">Vendor Details 01</a></li>
+                                            <li><a href="#">Vendor Details 02</a></li>
+                                            <li><a href="#">Vendor Dashboard</a></li>
+                                            <li><a href="#">Vendor Guide</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item" style="position: static;"><a href="#">Mega menu <i
+                                                class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="mega-menu">
+                                            <li class="sub-mega-menu">
+                                                <a href="#">Fruit & Vegetables</a>
+                                                <ul>
+                                                    <li><a href="#">Meat & Poultry</a></li>
+                                                    <li><a href="#">Fresh Vegetables</a></li>
+                                                    <li><a href="#">Herbs & Seasonings</a></li>
+                                                    <li><a href="#">Cuts & Sprouts</a></li>
+                                                    <li><a href="#">Exotic Fruits & Veggies</a></li>
+                                                    <li><a href="#">Packaged Produce</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-mega-menu">
+                                                <a href="#">Breakfast & Dairy</a>
+                                                <ul>
+                                                    <li><a href="#">Milk & Flavoured Milk</a></li>
+                                                    <li><a href="#">Butter and Margarine</a></li>
+                                                    <li><a href="#">Eggs Substitutes</a></li>
+                                                    <li><a href="#">Marmalades</a></li>
+                                                    <li><a href="#">Sour Cream</a></li>
+                                                    <li><a href="#">Cheese</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-mega-menu">
+                                                <a href="#">Meat & Seafood</a>
+                                                <ul>
+                                                    <li><a href="#">Breakfast Sausage</a></li>
+                                                    <li><a href="#">Dinner Sausage</a></li>
+                                                    <li><a href="#">Chicken</a></li>
+                                                    <li><a href="#">Sliced Deli Meat</a></li>
+                                                    <li><a href="#">Wild Caught Fillets</a></li>
+                                                    <li><a href="#">Crab and Shellfish</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-mega-menu">
+                                                <div class="menu-banner-wrapper">
+                                                    <a href="#">
+                                                        <img src="img/banner-menu.png" alt="">
+                                                    </a>
+                                                    <div class="content">
+                                                        <h4>Hot Deals</h4>
+                                                        <h3>Don't miss <br> Trending</h3>
+                                                        <p>Save to 50%</p>
+                                                        <button type="button">Shop now</button>
+                                                    </div>
+                                                    <div class="discount">
+                                                        <h3>
+                                                            <span>25%</span>
+                                                            off
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Blog Category Grid</a></li>
+                                            <li><a href="#">Blog Category List</a></li>
+                                            <li><a href="#">Blog Category Big</a></li>
+                                            <li><a href="#">Blog Category Wide</a></li>
+                                            <li><a href="#">Single Post <i class="fa-solid fa-angle-right"></i></a>
+                                                <ul class="level-menu">
+                                                    <li><a href="#">Left Sidebar</a></li>
+                                                    <li><a href="#">Right Sidebar</a></li>
+                                                    <li><a href="#">No Sidebar</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#">My Account</a></li>
+                                            <li><a href="#">Login</a></li>
+                                            <li><a href="#">Register</a></li>
+                                            <li><a href="#">Purchase Guide</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms of Service</a></li>
+                                            <li><a href="#">404 Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="contact">
+                            <div class="content-wrapper">
+                                <img src="img/icon-headphone-white.svg" alt="">
+                                <div class="text">
+                                    <span>1900 - 888</span>
+                                    <span>24/7 Support Center</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+  
     <div class="page-header">
         <div class="container-fluid">
             <div class="crumb">
