@@ -18,7 +18,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
+<head>
+    <style>
+    .zoom {
+      transition: transform .2s; /* Animation */
+    }
+.image img{
+    width: 100%;
+}
+    .zoom:hover {
+      transform: scale(0.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      position:absolute;
+      right:0;
+    }
+    
+    </style>
+  </head>
 <body>
     <div class="overlay"></div>
 
@@ -593,9 +608,9 @@
                     <div class="product-detail">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="image">
+                                <div class="image zoom">
                                     <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/shop/product-16-7.jpg"
-                                        alt="">
+                                                                                                                            alt="" >
                                 </div>
                                 <div class="slider2">
                                     <div class="image">

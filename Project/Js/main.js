@@ -35,6 +35,7 @@ $(function () {
     $('#btn-open-navbar, #btn-close-navbar, .overlay').click(function () {
         $('.overlay, .sidebar').toggleClass('active');
     });
+
     let table = document.querySelector('.tbody1');
 
 
@@ -104,49 +105,50 @@ $(function () {
     function createBasketItems() {
         let basket = JSON.parse(localStorage.getItem("basket"));
         let table = document.querySelector('.tbody1');
-        for (let prod of basket) {
-            table.innerHTML += `
-        <tr data-index="${prod.id}">
-        <td><img src="${prod.image}" alt=""></td>
-        <td class="product-des product-name">
-            <h6 class="mb-5"><a class="product-name" href="shop-product-right.html">${prod.name}</a></h6>
-            <div class="product-rate">
-                <i class="fa-solid fa-star star"></i>
-                <i class="fa-solid fa-star star"></i>
-                <i class="fa-solid fa-star star"></i>
-                <i class="fa-solid fa-star star"></i>
-                <i class="fa-solid fa-star-half star"></i>
-                <span>(4.0)</span>
-            </div>
-        </td>
-        <td>
-            <h4>
-                $2.51
-            </h4>
-        </td>
-        <td>
-            <div class="detail-extra">
-                <div class="count">
-                    <a href="" class="qty-down"><i class="fa-solid fa-angle-down"></i></a>
-                    <span class="qty-val">1</span>
-                    <a href="" class="qty-up"><i class="fa-solid fa-angle-up"></i></a>
+        if (table) {
+            for (let prod of basket) {
+                table.innerHTML += `
+            <tr data-index="${prod.id}">
+            <td><img src="${prod.image}" alt=""></td>
+            <td class="product-des product-name">
+                <h6 class="mb-5"><a class="product-name" href="shop-product-right.html">${prod.name}</a></h6>
+                <div class="product-rate">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star-half star"></i>
+                    <span>(4.0)</span>
                 </div>
-                <div class="add-cart">
-                    <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Add To
-                        Cart</button>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
-                    <a href=""><i class="fa-solid fa-code-compare"></i></a>
+            </td>
+            <td>
+                <h4>
+                    $2.51
+                </h4>
+            </td>
+            <td>
+                <div class="detail-extra">
+                    <div class="count">
+                        <a href="" class="qty-down"><i class="fa-solid fa-angle-down"></i></a>
+                        <span class="qty-val">1</span>
+                        <a href="" class="qty-up"><i class="fa-solid fa-angle-up"></i></a>
+                    </div>
+                    <div class="add-cart">
+                        <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Add To
+                            Cart</button>
+                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                        <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                    </div>
                 </div>
-            </div>
-        </td>
-        <td>
-            <a class="text-body"><i class="fa-solid fa-trash-can remove-cart-item"></i></a>
-        </td>
-    </tr>    
-        `
-
-
+            </td>
+            <td>
+                <a class="text-body"><i class="fa-solid fa-trash-can remove-cart-item"></i></a>
+            </td>
+        </tr>    
+            `
+            }
         }
+
 
         $('.remove-cart-item').click(function (e) {
             e.preventDefault();
