@@ -36,6 +36,7 @@ $(function () {
         $('.overlay, .sidebar').toggleClass('active');
     });
 
+   
     let table = document.querySelector('.tbody1');
 
 
@@ -133,12 +134,6 @@ $(function () {
                         <span class="qty-val">1</span>
                         <a href="" class="qty-up"><i class="fa-solid fa-angle-up"></i></a>
                     </div>
-                    <div class="add-cart">
-                        <button type="submit"><i class="fa-solid fa-cart-shopping"></i> Add To
-                            Cart</button>
-                        <a href=""><i class="fa-regular fa-heart"></i></a>
-                        <a href=""><i class="fa-solid fa-code-compare"></i></a>
-                    </div>
                 </div>
             </td>
             <td>
@@ -163,6 +158,32 @@ $(function () {
             }
         });
     }
+    $(document).ready(function(){
+        $('div.tabmenu div').click(function(){
+            var tab_id = $(this).attr('data-tab');
+    
+            $('div.tabmenu div').removeClass('current');
+            $('.tab-content').removeClass('current');
+    
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        })
+    
+    })
 });
 
+// var headings = document.querySelectorAll(".tabmenu div")
+// var contexts = document.querySelectorAll(".content div")
+// for (var heading of headings) {
+//     heading.addEventListener("click", function() {
+//         var active = document.querySelector('.active');
+//         active.classList.remove('active');
+//         this.classList.add('active');
 
+//         var id = this.getAttribute('data-id');
+
+//         for (var context of contexts) {
+//             if (context.getAttribute('data-id') == id) { context.classList.remove('d-none') } else(context.classList.add('d-none'))
+//         }
+//     })
+// };
